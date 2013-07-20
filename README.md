@@ -59,7 +59,7 @@ Copyright 2013 Antonio Salvati
 Released under the MIT and GPL (version 2 or later) Licenses.
 
 
-[1]: http://www.antoniosalvati.it/public/jquery-pusher/demo/basic/
-[2]: http://www.antoniosalvati.it/public/jquery-pusher/demo/advanced/
+[1]: http://www.antoniosalvati.it/public/jquery-pusher/demos/basic/
+[2]: http://www.antoniosalvati.it/public/jquery-pusher/demos/advanced/
 
 

@@ -48,6 +48,6 @@ Released under the MIT and GPL (version 2 or later) Licenses.
 
 
 [1]: http://www.antoniosalvati.it/public/jquery-pusher/demo/basic/
-[2]: http://www,antoniosalvati.it/public/jquery-pusher/demo/advanced/
+[2]: http://www.antoniosalvati.it/public/jquery-pusher/demo/advanced/
 
 

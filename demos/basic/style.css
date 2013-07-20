@@ -1,0 +1,25 @@
+#menu {
+  float: left;
+  width: 200px;
+}
+
+#content {
+  float: left;
+  width: 500px;  
+}
+
+#content > p {
+  padding: 20px;
+}
+
+.index {
+  background: #CCC;
+}
+
+.page2 {
+  background: #992;
+}
+
+.page3 {
+  background: #285;
+}

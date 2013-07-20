@@ -1,0 +1,63 @@
+* { box-sizing: border-box } 
+
+#menu {
+  float: left;
+  width: 200px;
+}
+
+#wrapper {
+  float: left;
+  width: 500px;  
+  position: relative;
+  overflow: hidden;
+}
+
+#content, #next {
+  float: left;
+  width: 500px;
+}
+
+#next {
+  position: absolute;
+  left: 500px;
+}
+
+#content > p, #next > p {
+  padding: 20px;
+}
+
+.index {
+  background: #CCC;
+}
+
+.page2 {
+  background: #992;
+}
+
+.page3 {
+  background: #285;
+}
+
+.error {
+  background: #881C1C;
+  color: white;
+}
+
+#loading {
+  background: #D73939;
+  color: white;
+  display: none;
+  left: 210px;
+  padding: 4px;
+  position: fixed;
+  top: 12px;
+}
+
+a {
+  color: #3111EE;
+  text-decoration: none;
+}
+
+a.active, a:hover {
+  text-decoration: underline;
+}

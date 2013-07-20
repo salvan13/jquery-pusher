@@ -38,6 +38,18 @@ watch | `"a"`| watched elements
 initialPath | `window.location.pathname` | first state path
 onStateCreation | noop | function executed everytime when new state is created, takes as parameters: the new state and the clicked element (if exists) , can be used to add additional values to the state
 
+###Context
+In `handler`, `after`, `fail` and `before` function you can access the context with `this`.
+It contains:
+
+1. `state` object: the current state 
+2. `get` function: the function to get the loaded page (if exists)
+
+exammple using `get`: 
+
+    $("body").append( this.get('#elem') );
+    
+append to the current page body the #elem from the loaded page.
 
 LICENSE
 ---------

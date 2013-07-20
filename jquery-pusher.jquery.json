@@ -1,0 +1,28 @@
+{
+  "name": "jquery-pusher",
+  "title": "jQuery Pusher Plugin",
+  "description": "This plugin aims to enable the HTML5 navigation in sites without having to change anything server side. If the browser does not support HTML5 no fallback is provided, the site will be simply browsed in the old way.",
+  "version": "0.1.1",
+  "keywords": ["pushState", "HTML5 navigation", "navigation", "history", "push state"],
+  "homepage": "https://github.com/salvan13/jquery-pusher",
+  "docs": "https://github.com/salvan13/jquery-pusher/blob/master/README.md",
+  "demo": "http://www.antoniosalvati.it/public/jquery-pusher/demos/advanced/index.html",
+  "bugs": "https://github.com/salvan13/jquery-pusher/issues",
+  "author": {
+    "name": "Antonio Salvati",
+    "url": "http://www.antoniosalvati.it/"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://gilmoreorless.mit-license.org/2011/"
+    },
+    {
+      "type": "GPL2",
+      "url": "http://www.gnu.org/licenses/gpl-2.0.html"
+    }
+  ],
+  "dependencies": {
+    "jquery": ">=1.7"
+  }
+}

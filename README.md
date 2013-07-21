@@ -45,7 +45,7 @@ It contains:
 1. `state` object: the current state 
 2. `get` function: the function to get the loaded page (if exists)
 
-exammple using `get`: 
+example using `get`: 
 
     $("body").append( this.get('#elem') );
     

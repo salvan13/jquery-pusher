@@ -7,12 +7,10 @@ This plugin aims to enable the HTML5 navigation in sites without having to chang
 
 ###Basic usage
     $("#menu").pusher({
-
       handler: function() {
         this.updateText("title");
         this.updateHtml("#content");
       }
-
     });
 
 
@@ -35,7 +33,7 @@ In `handler`, `after`, `fail` and `before` function you can access the context w
 It contains:
 
 1. `state` object: the current state 
-2. `get` function: find elements in the loaded page (if exists)
+2. `get` function: get elements from the loaded page (if exists)
 3. `updateText` function: replace text of the given selector from the loaded page to the actual page
 4. `updateHtml` function: replace contents of the given selector from the loaded page to the actual page
 

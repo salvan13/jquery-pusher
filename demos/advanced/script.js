@@ -1,15 +1,9 @@
 jQuery(function($) {
   
-  //initial active menu element
-  var initialActive = $("#menu a.active");
-  
   $(document).pusher({
     
     //watch on all 'a' in the document excpet external links
     watch: "a:not([href^='http'])",
-    
-    //set initial path = the .active link in menu
-    initialPath: initialActive.attr('href'), 
     
     before: function(done) {
       //show loading before page load
@@ -17,14 +11,14 @@ jQuery(function($) {
     },
     after: function() {
       //hide loading when the page is loaded
-      hideLoading(); 
-      
-      //add active class on all element with href = state.path
-      activate(this.state.path);  
+      hideLoading();
     },
     handler: function() {
-      //change the page title
-      $("title").text(this.get("title").text());
+      //update the page title
+      this.updateText("title");
+      
+      //update the menu
+      this.updateHtml("#menu");
       
       //slide effect to show the loaded content
       slide(this.get("#content").contents());
@@ -65,20 +59,11 @@ jQuery(function($) {
     next = next.length ? next : $("<div>").attr("id", "next");
     next.html(content);
     next.insertAfter(cnt);
-    next.animate({left: 0});
-    cnt.animate({left: -500}, function(){
+    next.animate({left: 0}, function(){
       cnt.remove();
       next.attr("id", "content");
     });
     
-  };
-  
-  var activate = function(path) {
-    $("a.active").removeClass("active");
-    $("a[href='" + path + "']").addClass("active");
-    if(!$("a.active").length) {
-      initialActive.addClass("active");
-    }
   };
   
 });

@@ -24,6 +24,8 @@
 
 #content > p, #next > p {
   padding: 20px;
+  height: 400px;
+  overflow: auto;
 }
 
 .index {

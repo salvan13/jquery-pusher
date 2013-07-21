@@ -91,6 +91,20 @@
       state: state,
       get: function(query) {
         return get(context.res, query);
+      },
+      updateText: function(query) {
+        var el = $(query);
+        this.get(query).each(function(i) {
+          var txt = $(this).text();  
+          el.eq(i).text(txt);
+        });
+      },
+      updateHtml: function(query) {
+        var el = $(query);
+        this.get(query).each(function(i) {
+          var cnt = $(this).contents();  
+          el.eq(i).html(cnt);
+        });
       }
     };
 

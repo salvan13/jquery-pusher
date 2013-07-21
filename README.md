@@ -9,17 +9,9 @@ This plugin aims to enable the HTML5 navigation in sites without having to chang
     $("#menu").pusher({
 
       handler: function() {
-
-        //when a link in the #menu is clicked, the plugin load the page internally
-        
-        //then we change the page title
-        $("title").text(this.get("title").text());
-
-        //and replace the #content contents
-        var cnt = "#content";
-        $(cnt).html(this.get(cnt).contents());
-
-     }
+        this.updateText("title");
+        this.updateHtml("#content");
+      }
 
     });
 
@@ -43,13 +35,9 @@ In `handler`, `after`, `fail` and `before` function you can access the context w
 It contains:
 
 1. `state` object: the current state 
-2. `get` function: the function to get the loaded page (if exists)
-
-example using `get`: 
-
-    $("body").append( this.get('#elem') );
-    
-append to the current page body the #elem from the loaded page.
+2. `get` function: find elements in the loaded page (if exists)
+3. `updateText` function: replace text of the given selector from the loaded page to the actual page
+4. `updateHtml` function: replace contents of the given selector from the loaded page to the actual page
 
 LICENSE
 ---------

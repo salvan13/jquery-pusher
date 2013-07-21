@@ -42,7 +42,7 @@ LICENSE
 
 Copyright 2013 Antonio Salvati
 
-Released under the MIT and GPL (version 2 or later) Licenses.
+Released under the MIT License.
 
 
 [1]: http://www.antoniosalvati.it/public/jquery-pusher/demos/basic/

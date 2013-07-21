@@ -2,7 +2,7 @@
   "name": "jquery-pusher",
   "title": "jQuery Pusher Plugin",
   "description": "This plugin aims to enable the HTML5 navigation in sites without having to change anything server side. If the browser does not support HTML5 no fallback is provided, the site will be simply browsed in the old way.",
-  "version": "0.1.1",
+  "version": "0.2.1",
   "keywords": ["ajax", "navigation", "history", "pushstate"],
   "homepage": "https://github.com/salvan13/jquery-pusher",
   "docs": "https://github.com/salvan13/jquery-pusher/blob/master/README.md",

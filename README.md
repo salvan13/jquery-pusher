@@ -6,13 +6,14 @@ Enable HTML5 History navigation in your web site easly.
 This plugin aims to enable the HTML5 navigation in sites without having to change anything server side. If the browser does not support HTML5 no fallback is provided, the site will be simply browsed in the old way.
 
 ###Basic usage
-    $("#menu").pusher({
-      handler: function() {
-        this.updateText("title");
-        this.updateHtml("#content");
-      }
-    });
-
+```js
+$("#menu").pusher({
+  handler: function() {
+    this.updateText("title");
+    this.updateHtml("#content");
+  }
+});
+```
 
 ###Demo
 [Basic][1] and [Advanced][2]
